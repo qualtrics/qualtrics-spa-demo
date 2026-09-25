@@ -1,0 +1,7 @@
+node_modules
+dist
+.angular
+.claude
+.DS_Store
+*.local
+.env.local

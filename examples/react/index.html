@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/qualtrics-logo.svg" />
+    <title>Qualtrics SPA demo (React)</title>
+
+    <!--
+      Paste your Qualtrics deployment code here.
+
+      Keep it here, not in a component. In a component it re-injects on every
+      mount and you get duplicate requests and impressions.
+
+      Without it window.QSI never exists and the hook in src/qsi/useQsiRoute.js
+      does nothing, but the app still runs.
+    -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
